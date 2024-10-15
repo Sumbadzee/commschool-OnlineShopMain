@@ -1,0 +1,204 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+  
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+  
+/* Container for content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+  
+header .container {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+  
+.logo a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+nav ul li {
+    margin-left: 20px;
+}
+
+nav img {
+    height: 15px;
+    width: 15px;
+}
+
+  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+nav ul li a:hover,
+nav ul li a:active {
+    color: #ffd700;
+}
+  
+  /* Main Section - Product Cards */
+.products {
+    padding: 50px 0;
+}
+  
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+  
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+  
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+  
+.product-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+  
+.product-card img {
+    width: 80%;
+    height: auto;
+}
+  
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+  
+.product-card .price {
+    font-size: 20px;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+  
+.product-card .rating {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+  
+.product-card .add-to-cart {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.product-card .add-to-cart:hover {
+    background-color: #2980b9;
+}
+  
+.product-card .add-to-cart:active {
+    background-color: #216fa3;
+}
+
+
+  
+/* რესპონსივი */
+@media (max-width: 768px) {
+    .product-card {
+      width: calc(50% - 20px);
+    }
+}
+  
+@media (max-width: 480px) {
+    .product-card {
+      width: 100%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+  
+/* ფუტერის სტილები */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+  
+footer .social-media {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+footer .social-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+  
+footer .social-link:hover {
+    color: #ffd700;
+}
+  
+footer .social-link .footer-img {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 10px; 
+    transition: transform 0.3s;
+}
+  
+footer .social-link:hover .footer-img {
+    transform: scale(1.1); 
+}
+  
+footer p {
+    margin-top: 10px;
+}
